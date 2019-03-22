@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SHYNMCD</string>
+    <string name="player_info">Player Info</string>
+    <string name="player_name">Player Name</string>
+    <string name="team">Team</string>
+    <string name="sixes">Sixes</string>
+    <string name="number_fours">Number Fours</string>
+    <string name="number_of_wickets">Number of Wickets</string>
+    <string name="save">Save</string>
+    <string name="name">Name</string>
+    <string name="fours">Fours</string>
+    <string name="wickets">Wickets</string>
+    <string name="playerinfo">PlayerInfo</string>
+</resources>

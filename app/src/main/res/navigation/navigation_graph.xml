@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/baseFragment">
+
+    <fragment
+        android:id="@+id/baseFragment"
+        android:name="com.example.shynmcd.UI.Fragment.BaseFragment"
+        android:label="base_fragment"
+        tools:layout="@layout/base_fragment" >
+        <action
+            android:id="@+id/action_baseFragment_to_addInfoFragment"
+            app:destination="@id/addInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addInfoFragment"
+        android:name="com.example.shynmcd.UI.Fragment.AddInfoFragment"
+        android:label="add_info_fragment"
+        tools:layout="@layout/add_info_fragment" />
+</navigation>
