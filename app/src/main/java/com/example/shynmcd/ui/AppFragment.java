@@ -1,8 +1,8 @@
-package com.example.shynmcd.UI;
+package com.example.shynmcd.ui;
 
 import android.os.Bundle;
 
-import com.example.shynmcd.UI.ViewModel.ViewModelFactory;
+import com.example.shynmcd.ui.viewmodel.ViewModelFactory;
 import com.example.shynmcd.Shynmcd;
 
 import androidx.annotation.Nullable;
@@ -18,11 +18,11 @@ public abstract class AppFragment<T extends ViewModel> extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         shynmcd = (Shynmcd) getActivity().getApplication();
-
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
         super.onActivityCreated(savedInstanceState);
         ViewModelFactory factory = new ViewModelFactory(shynmcd);
         viewModel = ViewModelProviders.of(this, factory).get(getViewModel());

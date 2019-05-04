@@ -2,8 +2,8 @@ package com.example.shynmcd;
 
 import android.content.Context;
 
-import com.example.shynmcd.Dao.PlayerInfoDao;
-import com.example.shynmcd.Model.PlayerInfo;
+import com.example.shynmcd.dao.PlayerInfoDao;
+import com.example.shynmcd.model.PlayerInfo;
 
 import java.util.concurrent.Executor;
 

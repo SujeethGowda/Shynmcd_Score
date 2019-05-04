@@ -1,4 +1,4 @@
-package com.example.shynmcd.UI.ViewModel;
+package com.example.shynmcd.ui.viewmodel;
 
 import com.example.shynmcd.Shynmcd;
 

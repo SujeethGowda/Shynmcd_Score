@@ -1,6 +1,6 @@
-package com.example.shynmcd.Dao;
+package com.example.shynmcd.dao;
 
-import com.example.shynmcd.Model.PlayerInfo;
+import com.example.shynmcd.model.PlayerInfo;
 
 import java.util.List;
 
@@ -14,7 +14,7 @@ import androidx.room.Update;
 @Dao
 public interface PlayerInfoDao {
     @Query("select * from PlayerInfoDetails;")
-    LiveData<List<PlayerInfo>> getAll();
+    LiveData<List<PlayerInfo>> getAllPlayerInfo();
 
     @Insert
     long insert(PlayerInfo playerInfo);

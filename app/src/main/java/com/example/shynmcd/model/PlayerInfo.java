@@ -1,4 +1,4 @@
-package com.example.shynmcd.Model;
+package com.example.shynmcd.model;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
@@ -19,14 +19,26 @@ public class PlayerInfo {
     @ColumnInfo(name = "TEAM", typeAffinity = ColumnInfo.TEXT)
     private String team;
 
-    @ColumnInfo(name = "SIX", typeAffinity = ColumnInfo.TEXT)
-    private String six;
+    @ColumnInfo(name = "SIX", typeAffinity = ColumnInfo.INTEGER)
+    private int six;
 
-    @ColumnInfo(name = "FOUR", typeAffinity = ColumnInfo.TEXT)
-    private String four;
+    @ColumnInfo(name = "FOUR", typeAffinity = ColumnInfo.INTEGER)
+    private int four;
 
-    @ColumnInfo(name = "WICKETS", typeAffinity = ColumnInfo.TEXT)
-    private String wickets;
+    @ColumnInfo(name = "WICKETS", typeAffinity = ColumnInfo.INTEGER)
+    private int wickets;
+
+    public void setSix(int six) {
+        this.six = six;
+    }
+
+    public void setFour(int four) {
+        this.four = four;
+    }
+
+    public void setWickets(int wickets) {
+        this.wickets = wickets;
+    }
 
     public int getId() {
         return id;
@@ -60,27 +72,15 @@ public class PlayerInfo {
         this.team = team;
     }
 
-    public String getSix() {
+    public int getSix() {
         return six;
     }
 
-    public void setSix(String six) {
-        this.six = six;
-    }
-
-    public String getFour() {
+    public int getFour() {
         return four;
     }
 
-    public void setFour(String four) {
-        this.four = four;
-    }
-
-    public String getWickets() {
+    public int getWickets() {
         return wickets;
-    }
-
-    public void setWickets(String wickets) {
-        this.wickets = wickets;
     }
 }

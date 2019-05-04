@@ -11,4 +11,5 @@
     <string name="fours">Fours</string>
     <string name="wickets">Wickets</string>
     <string name="playerinfo">PlayerInfo</string>
+    <string name="playername">PlayerName</string>
 </resources>

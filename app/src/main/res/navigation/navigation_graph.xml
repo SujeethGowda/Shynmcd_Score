@@ -7,16 +7,16 @@
 
     <fragment
         android:id="@+id/baseFragment"
-        android:name="com.example.shynmcd.UI.Fragment.BaseFragment"
+        android:name="com.example.shynmcd.ui.fragment.BaseFragment"
         android:label="base_fragment"
         tools:layout="@layout/base_fragment" >
         <action
-            android:id="@+id/action_baseFragment_to_addInfoFragment"
-            app:destination="@id/addInfoFragment" />
+            android:id="@+id/action_baseFragment_to_addPlayerFragment"
+            app:destination="@id/addPlayerFragment" />
     </fragment>
     <fragment
-        android:id="@+id/addInfoFragment"
-        android:name="com.example.shynmcd.UI.Fragment.AddInfoFragment"
-        android:label="add_info_fragment"
-        tools:layout="@layout/add_info_fragment" />
+        android:id="@+id/addPlayerFragment"
+        android:name="com.example.shynmcd.ui.fragment.AddPlayerFragment"
+        android:label="add_player_layout"
+        tools:layout="@layout/add_player_layout" />
 </navigation>

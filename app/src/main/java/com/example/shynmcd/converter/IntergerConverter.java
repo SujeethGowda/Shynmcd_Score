@@ -1,4 +1,4 @@
-package com.example.shynmcd.Converter;
+package com.example.shynmcd.converter;
 
 import androidx.databinding.InverseMethod;
 

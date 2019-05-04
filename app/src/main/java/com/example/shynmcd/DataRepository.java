@@ -1,5 +1,7 @@
 package com.example.shynmcd;
 
+import com.example.shynmcd.master.MasterRepository;
+
 public class DataRepository {
     private static DataRepository sInstance;
 
